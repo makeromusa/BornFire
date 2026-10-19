@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #262626;    
+}
+nav {
+    background-color: #173d2a;
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+section.hero {
+    min-height: 400px;
+    background-image: url('https://images.pexels.com/photos/5993935/pexels-photo-5993935.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 60px 20px;
+
+
+}
+
+section.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+section.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+section.hero button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px #0002;
+}
+
+@media (max-width: 700px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+/* Contact Section */
+section.hero-contact {
+    background-color: #173d2a;
+    color: #fff;
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.hero-contact h1 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin: 0 0 10px;
+}
+
+.hero-contact p {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 28px;
+    width: min(1180px, calc(100% - 40px));
+    min-height: calc(100vh - 184px);
+    margin: 0 auto;
+    padding: 28px 0;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(24px, 3vw, 40px);
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    background-color: #173d2a;
+    color: #fff;
+    box-shadow: 0 8px 24px #173d2a26;
+}
+
+.right {
+    background-color: #fff;
+    color: #262626;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left img {
+    max-width: 100%;
+    width: 100%;
+    height: clamp(150px, 23vh, 245px);
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.left h2 {
+    margin: 22px 0 8px;
+}
+
+.left p {
+    margin: 7px 0;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    margin: 0 0 7px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5d0;
+    border-radius: 7px;
+    background-color: #f8faf9;
+    color: #262626;
+    font: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 3px solid #e7a084;
+    border-color: #c96f4a;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #c96f4a;
+    color: #fff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ad5737;
+    transform: translateY(-1px);
+}
+
+@media (min-width: 701px) {
+    .contact-page nav {
+        padding: 10px;
+    }
+
+    .contact-page section.hero-contact {
+        padding: 16px 20px;
+    }
+
+    .contact-page .container {
+        padding: 8px 0;
+    }
+
+    .contact-page .left,
+    .contact-page .right {
+        padding: 20px;
+    }
+
+    .contact-page .left img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: min(100% - 24px, 560px);
+        min-height: auto;
+        padding: 12px 0 24px;
+        gap: 16px;
+    }
+
+    .left, .right {
+        padding: 22px;
+    }
+
+    .left img {
+        height: 170px;
+    }
+}
+
+nav a:hover{
+    color: #c96f4a; 
+}
